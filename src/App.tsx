@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 function App() {
   return (
     <ThemeProvider defaultTheme="system" storageKey="zestful-ui-theme">
-      <Button>Hello</Button>
+      <Button>Hello this is</Button>
     </ThemeProvider>
   );
 }

@@ -4,28 +4,36 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "bunx --bun vite",
+    "dev": "bun vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "ui:add": "bunx --bun shadcn-ui@latest add"
+    "ui:add": "bunx --bun shadcn-ui@latest add",
+    "lint": "eslint --ext .ts,.tsx ."
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
     "@radix-ui/react-slot": "^1.0.2",
+    "@t3-oss/env-core": "^0.7.1",
+    "@tanstack/react-query": "^5.14.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-react": "^0.298.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.2",
     "tailwind-merge": "^2.1.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.12.1",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.16",
+    "bun-types": "^1.0.18-1",
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
